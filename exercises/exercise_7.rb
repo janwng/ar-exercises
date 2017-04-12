@@ -11,3 +11,8 @@ puts "----------"
 
 # Your code goes here ...
 puts 'Input a store name:'
+user_input = gets.chomp
+
+store = Store.new
+store.name = user_input
+store.save!
